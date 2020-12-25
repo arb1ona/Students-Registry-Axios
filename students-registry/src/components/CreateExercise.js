@@ -58,8 +58,8 @@ export default class CreateExercise extends Component {
       duration: this.state.duration,
       date: this.state.date,
     };
-
-    console.log('onSubmit : "', this.state);
+    console.log(exercise);
+    //console.log('onSubmit : "', this.state);
 
     // window.location = "/";
   }
