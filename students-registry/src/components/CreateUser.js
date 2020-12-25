@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
+import axios from "axios";
 
 export default class CreateUser extends Component {
   constructor(props) {
@@ -25,6 +26,10 @@ export default class CreateUser extends Component {
       username: this.state.username,
     };
     console.log(user);
+
+    axios
+      .post("http://localhost:5000/users/add", user)
+      .then((res) => console.log(res.data));
 
     this.setState({
       username: "",
