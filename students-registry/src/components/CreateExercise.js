@@ -84,7 +84,7 @@ export default class CreateExercise extends Component {
 
     //console.log('onSubmit : "', this.state);
 
-    // window.location = "/";
+    window.location = "/";
   }
 
   render() {
